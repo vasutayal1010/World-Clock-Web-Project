@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_2.css">
+</head>
+<body>
+   <!-- <h1>CONTACT US :</h1>
+    <h3>Member 1</h3>
+    <address>
+        Vasu Tayal<br>7017576847<br>Jewar-203135,UP
+    </address>
+    <h3>Member 2</h3>
+    <address>
+        Shlok Srivastava<br>2523842541<br>Pratapgarh,UP
+    </address>-->
+
+  <div class="topnav">
+  <a class="active" href="#home">HOME</a>
+      <a href="#">StopWatch</a>
+      <a href="#">Timer</a>
+      <a href="#">Temperature</a>
+      <a href="#">AQI</a>
+      <a href="#">Longitude</a>
+      <a href="#">Latitude</a>
+    
+<a href="#contact" id="a1">ABOUT</a>
+<a href="#" id="a2">CONTACT US</a>
+</div>
+
+<h1 id="a3"><b><i><u>Own Time or Time Will Own You!!</u></i></b></h1>
+<div>
+<p id="demo1"></p>
+
+<script>
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo1").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</div>
+<u><p id="a4"></p></u>
+<script>
+    document.getElementById("a4").innerHTML=Date();
+</script><br>
+
+<hr>
+<div>
+<p><i>Click the button to get your coordinates:-</i></p>
+
+<button onclick="getLocation()">Get Your Longitude & Latitude</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</div>
+
+<hr>
+<div>
+<h3 id="a5">Enter your location you want to search:-</h3>
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Enter Location...." name="search">
+  <button type="submit">Search Location</button>
+</form>
+</div>
+
+
+
+
+</body>
+</html>
