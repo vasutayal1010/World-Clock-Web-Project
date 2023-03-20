@@ -20,18 +20,19 @@
 
   <div class="topnav">
   <a class="active" href="#home">HOME</a>
-      <a href="#">StopWatch</a>
+      <a href="http://127.0.0.1:5500/Front-end/Timer.html">StopWatch</a>
       <a href="#">Timer</a>
       <a href="#">Temperature</a>
       <a href="#">AQI</a>
-      <a href="#">Longitude</a>
-      <a href="#">Latitude</a>
+      <a href="http://127.0.0.1:5500/Front-end/Longitude.html">Longitude & Latitude</a>
+      
     
 <a href="#contact" id="a1">ABOUT</a>
-<a href="#" id="a2">CONTACT US</a>
+<a href="http://127.0.0.1:5500/Front-end/Contact_us.html" id="a2">CONTACT US</a>
 </div>
 
 <h1 id="a3"><b><i><u>Own Time or Time Will Own You!!</u></i></b></h1>
+
 <div>
 <p id="demo1"></p>
 
@@ -44,14 +45,14 @@ function myTimer() {
 }
 </script>
 </div>
-<u><p id="a4"></p></u>
+<p id="a4"></p>
 <script>
     document.getElementById("a4").innerHTML=Date();
 </script><br>
 
 <hr>
 <div>
-<p><i>Click the button to get your coordinates:-</i></p>
+<h3 id="z"><i><u>Click the button to get your coordinates:-</u></i></h3>
 
 <button onclick="getLocation()">Get Your Longitude & Latitude</button>
 
