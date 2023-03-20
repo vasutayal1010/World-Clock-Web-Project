@@ -76,15 +76,17 @@ form.example::after {
   display: table;
 }
 #a4{
-  text-align: right;
+  text-align: center;
   font-size: 27px;
-  color: rgb(210,90,200);
+  background-color: rgb(210,90,200);
 }
 #a3{
   color:rgb(222, 125, 90);
+  font-size: 40px;
 }
 #a5{
-  color: green;
+  background-color:rgb(12,199,220);
+  font-size: 20px;
   
 }
 
@@ -93,10 +95,11 @@ form.example::after {
   font-size: 65px;
   color: rgb(200,10,50);
   
+  
 }
 body{
   background-color:seashell;
-  background-image: url("https://images.pexels.com/photos/1537268/pexels-photo-1537268.jpeg?auto=compress&cs=tinysrgb&w=600");
+  /*background-image: url("https://images.pexels.com/photos/552598/pexels-photo-552598.jpeg?auto=compress&cs=tinysrgb&w=600");*/
   height: 100%;
  background-position: center;
   background-repeat: no-repeat;
@@ -106,5 +109,12 @@ body{
   
 
 #z{
-  color: orange;
+  background-color: orange;
+  font-size: 20px;
+}
+#ss{
+  color: red;
+}
+#demo{
+ background-color: yellow;
 }
